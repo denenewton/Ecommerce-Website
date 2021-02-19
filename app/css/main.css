@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: #555;
+}
+
+.container {
+  padding: 0 2.5rem 0 2.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  height: 7rem;
+}
+
+.header {
+  background-image: radial-gradient(#fff, #ffd6d6);
+}
+
+.header .row {
+  margin-top: 7rem;
+}
+
+.logo-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  width: 12rem;
+}
+
+.nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.nav__list {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.nav__item a:link,
+.nav__item a:visited {
+  text-decoration: none;
+  color: #555;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.col-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  min-width: 30rem;
+}
+
+.col-2 h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  margin: 2.5rem 0;
+}
+
+.col-2 img {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.col-2 .btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff523b;
+  padding: 0.8rem 3rem;
+  border: none;
+  border-radius: 5rem;
+  margin: 3rem 0;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.col-2 .btn:hover {
+  background-color: #b32323;
+}
+
+.categories {
+  margin-top: 7rem;
+}
+
+.small-container {
+  max-width: 108rem;
+  margin: auto;
+  padding: 0 2.5rem 0 2.5rem;
+}
+
+.col-3 {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-width: 25rem;
+  margin-bottom: 3rem;
+}
+
+.col-3 img {
+  width: 100%;
+}
+
+.products {
+  margin-top: 7rem;
+}
+
+.products .row h2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 8rem;
+  position: relative;
+  line-height: 5rem;
+}
+
+.products .row h2::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 8rem;
+  height: 0.4rem;
+  border-radius: 5rem;
+  background-color: #ff523b;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.products .row h2:hover::after {
+  width: 15.3%;
+}
+
+.col-4 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  min-width: 20rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  -webkit-transition: scale .2s ease-in ,  -webkit-transform .2s ease-in .01s;
+  transition: scale .2s ease-in ,  -webkit-transform .2s ease-in .01s;
+  transition: transform .2s ease-in .01s ,  scale .2s ease-in;
+  transition: transform .2s ease-in .01s ,  scale .2s ease-in ,  -webkit-transform .2s ease-in .01s;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.col-4 h4 {
+  font-weight: normal;
+  line-height: 2rem;
+}
+
+.col-4 p {
+  font-size: 1.4rem;
+}
+
+.col-4:hover {
+  -webkit-transform: translateY(-0.5rem) scale(1.02);
+          transform: translateY(-0.5rem) scale(1.02);
+  -webkit-box-shadow: 0 1rem 4.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1rem 4.5rem rgba(0, 0, 0, 0.3);
+}
+
+.rating .fa {
+  color: #ff523b;
+}
+/*# sourceMappingURL=main.css.map */

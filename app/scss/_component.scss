@@ -1,0 +1,134 @@
+//////////////////LOGO DO HEADER
+.logo-box {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 12rem;
+}
+///////////////////////NAV DO HEADER
+.nav {
+  flex: 1;
+  text-align: right;
+
+  &__list {
+    display: inline-block;
+    list-style: none;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 2rem;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: $color-grey-dark-1;
+    }
+  }
+}
+///////////////ROW READER
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  flex: 0 0 50%;
+  min-width: 30rem;
+  h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+    margin: 2.5rem 0;
+  }
+  img {
+    width: 100%;
+    padding: 5rem 0;
+  }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff523b;
+    padding: 0.8rem 3rem;
+    border: none;
+    border-radius: 5rem;
+    margin: 3rem 0;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #b32323;
+    }
+  }
+}
+.categories {
+  margin-top: 7rem;
+}
+.small-container {
+  max-width: 108rem;
+  margin: auto;
+  padding: 0 2.5rem 0 2.5rem;
+}
+.col-3 {
+  flex-basis: 30%;
+  min-width: 25rem;
+  margin-bottom: 3rem;
+  & img {
+    width: 100%;
+  }
+}
+.products {
+  margin-top: 7rem;
+  .row {
+    h2 {
+      flex: 0 0 100%;
+      text-align: center;
+      margin-bottom: 8rem;
+      position: relative;
+      line-height: 5rem;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 8rem;
+        height: 0.4rem;
+        border-radius: 5rem;
+        background-color:#ff523b;
+        transition: width 0.3s ease;
+      }
+      &:hover::after{
+        width: 15.3%;
+      }
+    }
+  }
+}
+.col-4 {
+  box-sizing: border-box;
+  flex-basis: 25%;
+  min-width: 20rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  transition: transform .2s ease-in .01s , 
+              scale .2s ease-in; 
+  & img {
+    width: 100%;
+  }
+  & h4{
+    font-weight: normal;
+    line-height: 2rem;
+  }
+  & p{
+    font-size: 1.4rem;
+  }
+  &:hover{
+    transform: translateY(-.5rem) scale(1.02);
+    box-shadow: 0 1rem 4.5rem rgba(0,0,0,0.3);
+  }
+}
+.rating{
+  & .fa{
+    color: #ff523b;
+  }
+}

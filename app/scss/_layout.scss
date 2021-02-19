@@ -1,0 +1,17 @@
+.container {
+  padding: 0 2.5rem 0 2.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 7rem;  
+}
+.header{
+  background-image: radial-gradient(#fff, #ffd6d6);
+}
+.header .row{
+  margin-top: 7rem;
+}
